@@ -1,36 +1,20 @@
-# Knim
-## _Kinc in Nim_
+# Njin
+## _Game Engine Development_
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Knim are the Nim bindings of the [Kinc](https://github.com/Kode/Kinc) low level ultra-portable graphics library.
-
 ⚠️This repository is still a work in progress⚠️
-
-Tested on:
-<li>Windows: Direct3D11 and OpenGL (Direct3D12 & Vulkan soon)</li> 
-<li>Linux: OpenGL (Vulkan soon)</li>
-<li>MacOSX: OpenGL (Metal soon)</li>
-<li>Android: OpenGL (Vulkan soon)</li>
-
-<br>Not tested on:
-<li>IOS: Metal</li>
-<li>PS4/PS5: LibGNM</li>
-<li>XBOX: Direct3D12</li>
-<li>WEB</li>
-<li>...</li>
 
 ## Dependencies
 
-- You need node installed on your system PATH. (You can download the binary).
+- [Knim](https://github.com/IbrahimHindawi/Knim)
 
 ## Features
 
-- Check out https://github.com/Kode/Kinc or  https://github.com/Kode/Kha for features
+- work in progress
 
-## How to get
-
-- ```git clone --recursive https://github.com/IbrahimHindawi/Knim```
+## To do:
+- Make a 2D Engine
 
 ## How to run
 
@@ -51,20 +35,3 @@ invoke ```build.nims``` NimScript: ```nim -d:[mode] -d:[backend] Sources/build.n
     - Customize ```build.nims``` Nimscript file for target compiler/cpu/os.
     - for Android, add ```ndk {abiFilters "arm64-v8a"}``` to the ```gradle.build```
     - ```nim -d:codegen -d:opengl Sources/build.nims Sources/prog.nim```
-
-## Tutorials
-
-- [Lewis Lepton](https://www.youtube.com/playlist?list=PL4neAtv21WOmmR5mKb7TQvEQHpMh1h0po) - Kha Tutorial
-- [Lubos Lenco](https://github.com/luboslenco/kha3d_examples/wiki) - Kha 3D Tutorial
-- [Knim Samples](https://github.com/IbrahimHindawi/Knim-Samples) - Translated some existing tutorials to Nim
-
-## Documentation
-
-- Unfortunately there are no docs for [Kinc](https://github.com/Kode/Kinc) yet.
-- Minimal Kha docs here: [Kha](http://kha.tech/).
-
-## To do:
-- Automate the project ( there are already .vscode build tasks in the standalone subdirectory).
-- Make Nimble Package(s).
-- get rid of prog.nims
-- I will attempt to write docs as I work more on binding this library.
